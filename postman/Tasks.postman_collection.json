@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "85cc1632-b2da-4a75-88f0-09e2f4a3fe2d",
+		"name": "Tasks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25977956"
+	},
+	"item": [
+		{
+			"name": "Show",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|jwyY4ytndzzatvQwDRw98dwGguGItKGhJjyCA6fi1673f58d",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{DOMAIN}}/api/tasks/1",
+					"host": [
+						"{{DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|e50dJSkvENcGI6gVHAVhIR3Rf1X4kQo8WavKYNAC75979227",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "todo ",
+							"type": "text"
+						},
+						{
+							"key": "project_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{DOMAIN}}/api/tasks",
+					"host": [
+						"{{DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Index",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|jwyY4ytndzzatvQwDRw98dwGguGItKGhJjyCA6fi1673f58d",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{DOMAIN}}/api/tasks",
+					"host": [
+						"{{DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|jwyY4ytndzzatvQwDRw98dwGguGItKGhJjyCA6fi1673f58d",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "project_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{DOMAIN}}/api/tasks/1",
+					"host": [
+						"{{DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|jwyY4ytndzzatvQwDRw98dwGguGItKGhJjyCA6fi1673f58d",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{DOMAIN}}/api/tasks/2",
+					"host": [
+						"{{DOMAIN}}"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
